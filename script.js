@@ -54,6 +54,7 @@ async function FetchApi(input) {
     }
 }
 document.querySelector("#searchButton").addEventListener('click',()=>{
-    let input=document.querySelector("#inputField").value;
-    FetchApi(input);
+    let input=document.querySelector("#inputField");
+    FetchApi(input.value);
+    input.value="";
 })
