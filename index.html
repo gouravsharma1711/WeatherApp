@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="topContainer">
+        <Div class="left">
+            <div class="searchDiv">
+                <input type="text" id="inputField" class="CityNameInput" placeholder="Enter the City">
+                <button class="searchButton" id="searchButton"></button>
+            </div>
+            <div class="Day" id="WeekDay">
+            </div>
+            <div class="date" id="todayDate">
+            </div>
+            <div class="ImageDiv" id="myImage">
+                <img class="Image" src="clear.png" id="insideImageTag">
+            </div>
+            <div class="Temp" id="temp2">
+            </div>
+            <div class="Weather" id="weather">
+            </div>
+        </Div>
+
+
+        <Div class="right">
+            <div class="innerRight">
+                <!-- city name -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key"> City Name</p>
+                    <div class="myImageDivClass">
+                        <img src="location.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="CityName"></p>
+            </div>
+            <!-- Temp -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Temperature</p>
+                    <div class="myImageDivClass">
+                        <img src="temp.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="temp"></p>
+            </div>
+            <!-- Max temp -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Max Temperature</p>
+                    <div class="myImageDivClass">
+                        <img src="maxTemp.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="MaxTemp"></p>
+            </div>
+            <!-- Min temp -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Min Temperature</p>
+                    <div class="myImageDivClass">
+                        <img src="minTemp.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="MinTemp"></p>
+            </div>
+            <!-- Humidity -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Humidity</p>
+                    <div class="myImageDivClass">
+                        <img src="humidity.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="Humidity"></p>
+            </div>
+            <!-- Wind Speed -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key"> Wind Speed </p>
+                    <div class="myImageDivClass">
+                        <img src="wind.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="Wind"></p>
+            </div>
+            <!-- SunRise -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Sunrise</p>
+                    <div class="myImageDivClass">
+                        <img src="sunRise.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="Sunrise"></p>
+            </div>
+            <!-- SunSet -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Sunset</p>
+                    <div class="myImageDivClass">
+                        <img src="sunset.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="sunset"></p>
+            </div>
+            <!-- Pressure -->
+            <div class="myclass2 myclass">
+                <div class="myclass3">
+                    <p class="key">Atmospheric Pressure</p>
+                    <div class="myImageDivClass">
+                        <img src="p.png" class="myImageClass">
+                    </div>
+                </div>
+                <p class="value" id="pressure"></p>
+            </div>
+            </div>
+        </Div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
