@@ -31,8 +31,8 @@ async function FetchApi(input) {
             maxTemp.innerHTML=data.main.temp_max+" °C";
             minTemp.innerHTML=data.main.temp_min+" °C";
             humidity.innerHTML=data.main.humidity+" %";
-            sunrise.innerHTML=new Date(data.sys.sunrise * 1000).toLocaleTimeString();
-            sunset.innerHTML=new Date(data.sys.sunset * 1000).toLocaleTimeString();
+            sunrise.innerHTML=new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-IN',{ hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            sunset.innerHTML=new Date(data.sys.sunset * 1000).toLocaleTimeString('en-IN',{ hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
             wind.innerHTML=(data.wind.speed * 3.6).toFixed(2)+" Km/h";
             pressure.innerHTML=data.main.pressure+" hPa";
             temp2.innerHTML=Math.round(data.main.temp)+" °C";
